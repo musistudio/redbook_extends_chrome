@@ -1,0 +1,25 @@
+{
+    "name": "小红书",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "小红书图片下载",
+    "browser_action": {
+        "default_icon": "favicon.png"
+    },
+    "permissions": [
+        "https://www.xiaohongshu.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.xiaohongshu.com/*"
+            ],
+            "js": [
+                "contentscript.js"
+            ],
+            "css": [
+                "style.css"
+            ]
+        }
+    ]
+}
